@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unicent School Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="screen">
+    <img src="assets/images/Unicent_Logo_1.png" class="logo" alt="Unicent School Logo"><br>
+    <h1 class="school">Unicent School</h1>
+    <h1>WELCOMES YOU TO</h1>
+    <h1 class="IT">INFORMATION TECHNOLOGY</h1><h1>EDUFAIR 2025‑2026</h1>
+    <button onclick="showScreen('main-page')">Projects</button>
+    <button onclick="showScreen('how-it-works')">How it works</button>
+  </div>
+
+  <!-- How It Works Screen -->
+  <div id="how-it-works" class="screen" style="display: none;">
+    <p>Hello there! If you want to know how this website works then it is very simple. You just need to click on the go to main page button. If you click that button then you will go to the main page and from there you can just select the project you want to know about and find the information about it so, enjoy.</p>
+    <button class="back-button" onclick="showScreen('welcome-screen')">Back</button>
+  </div>
+
+  <!-- Main Page -->
+  <div id="main-page" class="screen" style="display: none;">
+    <button onclick="showScreen('arvr')">AR &amp; VR</button>
+    <button onclick="showScreen('topologies')">TOPOLOGIES</button>
+    <button onclick="showScreen('networking')">NETWORKING SYSTEM</button>
+    <button onclick="showScreen('line-following')">LINE FOLLOWING ROBOT</button>
+    <button onclick="showScreen('soil-sensor')">SOIL SENSOR</button>
+    <button onclick="showScreen('robot-ai')">ROBOT AND AI</button>
+    <button onclick="showScreen('toll-gate')">TOLL GATE</button>
+    <button onclick="showScreen('social-media')">SOCIAL MEDIA</button>
+    <button onclick="showScreen('convertions')">CONVERSIONS</button>
+    <button onclick="showScreen('mit-app')">MIT APP INVENTOR</button>
+    <button onclick="showScreen('chess')">CHESS</button>
+    <button onclick="showScreen('student-assistant')">STUDENT ASSISTANT APP</button>
+	<button onclick="showScreen('obsticle-stopping')">OBSTICLE STOPPING CAR</button>
+    <button class="back-button" onclick="showScreen('welcome-screen')">Back</button>
+  </div>
+
+  <!-- AR & VR -->
+  <div id="arvr" class="screen info-page" style="display: none;">
+	<img src="assets/images/AR-VR.png" class="logo" alt="arvr">
+    <div class="info-buttons" style="grid-template-columns: 1fr 1fr;">
+      <button onclick=showScreen('ar')>Augmented Reality</button>
+      <button onclick=showScreen('vr')>Virtual Reality</button>
+    </div>
+    <p><strong>Augmented Reality (AR):</strong> Overlays digital content on the real world through devices like smartphones or AR glasses.</p>
+    <p><strong>Virtual Reality (VR):</strong> Creates a completely immersive digital environment using VR headsets.</p>
+    <p>AR enhances learning by adding interactive 3D models, while VR offers immersive simulations.</p>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <!-- TOPOLOGIES -->
+  <div id="topologies" class="screen info-page" style="display: none;">
+	<img src="assets/images/topologies.png" class="logo" alt="top">
+    <p>Bus: All devices connect to a single central cable, called the backbone. It is inexpensive but is not fault‑tolerant, as a break in the main cable can disrupt the entire network.</p>
+    <p>Star: Every device connects to a central hub or switch. This is the most common arrangement for Local Area Networks (LANs). A failure in one connection won’t affect others, but the entire network will fail if the central device fails.</p>
+    <p>Ring: Devices are connected in a circular, closed‑loop fashion, with data passing from one device to the next. A single‑direction ring is vulnerable if one device fails, but a dual‑ring system can provide redundancy.</p>
+    <p>Mesh: Devices are interconnected with multiple redundant links. A full mesh connects every device to every other one, offering high reliability and security. A partial mesh connects only key devices. Mesh networks are complex and expensive to implement.</p>
+    <p><strong>Bus topology:</strong> Simple but can be prone to failures if the main cable breaks.</p>
+    <p><strong>Star topology:</strong> Highly popular for homes and offices due to easy troubleshooting.</p>
+    <p><strong>Ring topology:</strong> Helps ensure data packets circulate efficiently but risks total failure with one node down.</p>
+    <p><strong>Mesh topology:</strong> Best for critical systems requiring high availability.</p>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <!-- NETWORKING SYSTEM -->
+  <div id="networking" class="screen info-page" style="display: none;">
+	<img src="assets/images/ns.png" class="logo" alt="NS">
+    <p>PAN (Personal Area Network): A small network for connecting devices around a single person, such as a smartphone, tablet, or Bluetooth headphones. The range is typically limited to a few meters.</p>
+    <p>LAN (Local Area Network): Connects computers within a limited, local area, like a home, office building, or school.</p>
+    <p>MAN (Metropolitan Area Network): Spans a larger area than a LAN, such as a city or large campus, by connecting multiple LANs together.</p>
+    <p>WAN (Wide Area Network): Connects networks over a large geographic area, such as a country or even the entire world. The internet is the most well‑known example of a WAN.</p>
+    <p><strong>PAN:</strong> Typically uses Bluetooth or USB connections for nearby devices.</p>
+    <p><strong>LAN:</strong> Supports high‑speed communication within smaller areas.</p>
+    <p><strong>MAN:</strong> Ideal for linking multiple buildings or city infrastructure.</p>
+    <p><strong>WAN:</strong> Uses routers and public networks to connect globally.</p>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <!-- LINE FOLLOWING ROBOT -->
+  <div id="line-following" class="screen info-page" style="display: none;">
+	<div class="image-row">
+	<img src="assets/images/LFR1.JPG" class="logo" alt="LF1">
+	</div>
+
+    <p>Line following robots use sensors to detect and follow a path marked by a line on the floor, usually black on white. These robots are commonly used in industrial automation, logistics, and education to demonstrate basic robotics principles.</p>
+    <p>They typically use infrared sensors to detect line contrast. Applications include warehouse robots and automated guided vehicles. Programming involves simple control logic to stay on the path.</p>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <!-- SOIL SENSOR -->
+  <div id="soil-sensor" class="screen info-page" style="display: none;">
+    <p>Soil sensors measure the moisture, temperature, and nutrient content of soil. This data helps farmers and gardeners optimize irrigation and fertilization, improving crop yields and resource efficiency.</p>
+    <p>Common sensors include moisture probes, temperature sensors, and pH meters. Data can be sent wirelessly to mobile apps for real‑time monitoring. Smart farming techniques rely heavily on soil sensor data for precision agriculture.</p>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <!-- ROBOT AND AI -->
+  <div id="robot-ai" class="screen info-page" style="display: none;">
+	<img src="assets/images/ai.png" class="logo" alt="AI">
+    <p>Robots integrated with Artificial Intelligence (AI) can perform complex tasks such as perception, learning, decision making, and natural language processing. AI enhances robots’ autonomy and adaptability across various industries.</p>
+    <p>AI enables robots to recognize objects and navigate environments. Machine learning algorithms help robots improve over time. Examples include autonomous drones, robotic assistants, and self‑driving cars.</p>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <!-- TOLL GATE -->
+  <div id="toll-gate" class="screen info-page" style="display: none;">
+    <p>Toll gate systems automate vehicle toll collection using RFID tags, cameras, or sensors to reduce traffic congestion and improve efficiency on highways and bridges.</p>
+    <p>RFID allows fast and contactless payment. Number plate recognition cameras help enforce toll compliance. Smart tolling reduces queues and environmental impact.</p>
+    <img src="assets/images/toll_gate.png" class="logo" alt="TOLLGATE">
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <!-- SOCIAL MEDIA -->
+  <div id="social-media" class="screen info-page" style="display: none;">
+  <img src="assets/images/sm.png" class="logo" alt="SM">
+    <p>Social media platforms enable users to create, share, and interact with content and other users. They are powerful tools for communication, marketing, and community building.</p>
+    <p>Popular platforms include Facebook, Twitter, Instagram, and TikTok. Social media can influence public opinion and trends. Users share photos, videos, articles, and live streams.</p>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <!-- CONVERSIONS -->
+  <div id="convertions" class="screen info-page" style="display: none;">
+    <div class="info-buttons"
+         style="
+           grid-template-columns: repeat(4, 1fr);
+           gap: 12px;
+           max-height: 80vh;
+           overflow-y: auto;
+           width: 100%;
+           max-width: 900px;
+           margin: auto;
+         ">
+      <button onclick="showScreen('text-to-decimal')">Text to decimal</button>
+      <button onclick="showScreen('decimal-to-text')">Decimal to text</button>
+      <button onclick="showScreen('text-to-octal')">Text to octal</button>
+      <button onclick="showScreen('octal-to-text')">Octal to text</button>
+      <button onclick="showScreen('text-to-binary')">Text to binary</button>
+      <button onclick="showScreen('binary-to-text')">Binary to text</button>
+      <button onclick="showScreen('text-to-hex')">Text to hex</button>
+      <button onclick="showScreen('hex-to-text')">Hex to text</button>
+      <button onclick="showScreen('decimal-to-binary')">Decimal to binary</button>
+      <button onclick="showScreen('binary-to-decimal')">Binary to decimal</button>
+      <button onclick="showScreen('decimal-to-octal')">Decimal to octal</button>
+      <button onclick="showScreen('octal-to-decimal')">Octal to decimal</button>
+      <button onclick="showScreen('decimal-to-hex')">Decimal to hex</button>
+      <button onclick="showScreen('hex-to-decimal')">Hex to decimal</button>
+      <button onclick="showScreen('octal-to-binary')">Octal to binary</button>
+      <button onclick="showScreen('binary-to-octal')">Binary to octal</button>
+    </div>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <div id="text-to-decimal" class="screen info-page" style="display: none;">
+    <p>Text to Decimal Formula:<br>
+       Convert each character to its ASCII value (decimal).<br>
+       Example: 'A' → 65, 'B' → 66, etc.</p>
+    <p>Useful for encoding text in numeric form. Helps understand character encoding.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="decimal-to-text" class="screen info-page" style="display: none;">
+    <p>Decimal to Text Formula:<br>
+       Convert decimal ASCII values back to characters.<br>
+       Example: 65 → 'A', 66 → 'B', etc.</p>
+    <p>Useful for decoding numeric data into readable text. Often used in data transmission and encryption.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="text-to-octal" class="screen info-page" style="display: none;">
+    <p>Text to Octal Formula:<br>
+       Convert each character to its ASCII decimal value, then convert the decimal to octal (base‑8).<br>
+       Example: 'A' (65) → 101 in octal.</p>
+    <p>Octal is a compact way to represent binary data. Used historically in computing systems.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="octal-to-text" class="screen info-page" style="display: none;">
+    <p>Octal to Text Formula:<br>
+       Convert each octal number to decimal, and then look up the corresponding ASCII character.<br>
+       Example: 101 in octal → 65 in decimal → 'A'.</p>
+    <p>Used to decode information stored in octal format. The inverse of Text to Octal conversion.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="text-to-binary" class="screen info-page" style="display: none;">
+    <p>Text to Binary Formula:<br>
+       Convert each character to its ASCII decimal value, then convert the decimal to binary (base‑2).<br>
+       Example: 'A' (65) → 01000001 in binary.</p>
+    <p>Binary is the native language of all computers. Fundamental for data storage and communication.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="binary-to-text" class="screen info-page" style="display: none;">
+    <p>Binary to Text Formula:<br>
+       Group the binary digits (usually 8 bits), convert each group to decimal, and then to the ASCII character.<br>
+       Example: 01000001 → 65 in decimal → 'A'.</p>
+    <p>Decodes computer‑readable binary into human‑readable text. Essential process in network communication.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="text-to-hex" class="screen info-page" style="display: none;">
+    <p>Text to Hex Formula:<br>
+       Convert each character to its ASCII decimal value, then convert the decimal to hexadecimal (base‑16).<br>
+       Example: 'A' (65) → 41 in hex.</p>
+    <p>Hexadecimal is often used in web colors and memory addresses. A very compact representation of binary data.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="hex-to-text" class="screen info-page" style="display: none;">
+    <p>Hex to Text Formula:<br>
+       Convert each hexadecimal pair (byte) to decimal, and then look up the corresponding ASCII character.<br>
+       Example: 41 in hex → 65 in decimal → 'A'.</p>
+    <p>Used for inspecting raw data and network packets. The inverse of Text to Hex conversion.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="decimal-to-binary" class="screen info-page" style="display: none;">
+    <p>Decimal to Binary Formula:<br>
+       Repeatedly divide the decimal number by 2 and record the remainders in reverse order.<br>
+       Example: 13 in decimal → 1101 in binary.</p>
+    <p>This is the core conversion for computer math. Demonstrates place value in different number systems.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="binary-to-decimal" class="screen info-page" style="display: none;">
+    <p>Binary to Decimal Formula:<br>
+       Multiply each binary digit by 2^n (where n is the digit’s position starting from 0 on the right) and sum the results.<br>
+       Example: 1101 = 1×2^3 + 1×2^2 + 0×2^1 + 1×2^0 = 8+4+0+1 = 13.</p>
+    <p>Used to translate raw computer values into base‑10 numbers. The inverse of Decimal to Binary conversion.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="decimal-to-octal" class="screen info-page" style="display: none;">
+    <p>Decimal to Octal Formula:<br>
+       Repeatedly divide the decimal number by 8 and record the remainders in reverse order.<br>
+       Example: 10 in decimal → 12 in octal.</p>
+    <p>Octal is sometimes easier for humans to read than long binary strings. Historically used in file permissions on Unix systems.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="octal-to-decimal" class="screen info-page" style="display: none;">
+    <p>Octal to Decimal Formula:<br>
+       Multiply each octal digit by 8^n (where n is the digit’s position starting from 0 on the right) and sum the results.<br>
+       Example: 12 = 1×8^1 + 2×8^0 = 8+2 = 10.</p>
+    <p>Used to convert octal codes into standard numbers. The inverse of Decimal to Octal conversion.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="decimal-to-hex" class="screen info-page" style="display: none;">
+    <p>Decimal to Hex Formula:<br>
+       Repeatedly divide the decimal number by 16 and record the remainders (using A‑F for 10‑15) in reverse order.<br>
+       Example: 255 in decimal → FF in hex.</p>
+    <p>Hexadecimal is crucial for memory addressing and debugging. It’s the most common base‑conversion used alongside binary.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="hex-to-decimal" class="screen info-page" style="display: none;">
+    <p>Hex to Decimal Formula:<br>
+       Multiply each hex digit by 16^n (where n is the digit’s position starting from 0 on the right) and sum the results.<br>
+       Example: FF = 15×16^1 + 15×16^0 = 240+15 = 255.</p>
+    <p>Used to convert hex codes (like color codes) into decimal. The inverse of Decimal to Hex conversion.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="octal-to-binary" class="screen info-page" style="display: none;">
+    <p>Octal to Binary Formula:<br>
+       Convert each octal digit into its 3‑bit binary equivalent.<br>
+       Example: 71 in octal → 111001 in binary.</p>
+    <p>A simple process since 8 = 2^3. Provides a quick visual way to convert between these two bases.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <div id="binary-to-octal" class="screen info-page" style="display: none;">
+    <p>Binary to Octal Formula:<br>
+       Group the binary digits into sets of three (starting from the right) and convert each group to its octal equivalent.<br>
+       Example: 111001 → 111 | 001 → 7 | 1 → 71 in octal.</p>
+    <p>Used to simplify the representation of long binary numbers. The inverse of Octal to Binary conversion.</p>
+    <button class="back-button" onclick="showScreen('convertions')">Back</button>
+  </div>
+
+  <!-- MIT APP INVENTOR -->
+  <div id="mit-app" class="screen info-page" style="display: none;">
+  <img src="assets/images/mit_app.png" class="logo" alt="MA">
+    <p>MIT App Inventor is a beginner‑friendly, drag‑and‑drop programming tool for creating Android apps. It uses visual blocks for coding, making app development accessible to novices and educators.</p>
+    <p>No prior coding experience needed. Great for teaching programming concepts visually. Supports app testing on mobile devices in real‑time.</p>
+	 <div class="info-buttons" style="grid-template-columns: 1fr 1fr;">
+      <button onclick=showScreen('texttospeech')>Text to Speech</button>
+      <button onclick=showScreen('speechtotext')>Speech to Text</button>
+    </div>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <div id="chess" class="screen info-page" style="display: none;">
+   <img src="assets/images/chess.png" class="logo" alt="CHESS">
+    <h2>Digital Chess Game</h2>
+    <p>This is an interactive digital version of the classic chess game. It helps users practice and play chess against another person. Chess sharpens your mind, teaches strategy, and improves decision‑making skills.</p>
+    <p>Includes all standard rules of chess. Suitable for beginners and experienced players. Promotes logical thinking and patience. Features include move validation, check/checkmate detection, and turn‑based play. Can be used to learn opening strategies and endgame tactics.</p>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <div id="student-assistant" class="screen info-page" style="display: none;">
+    <h2>Student Assistant App</h2>
+    <p>The Student Assistant App is a lightweight virtual helper designed specifically for school students. Unlike traditional AI bots, it provides short, direct answers — perfect for quick learning and less confusion.</p>
+    <h3>Features:</h3>
+    <p>Provides brief, relevant answers. Helps with homework and quick research. Student‑friendly language and interface. Could include reminders, quiz practice, or subject explanations.</p>
+    <p><strong>Example Use:</strong> Ask "What is photosynthesis?" and get a one‑line answer like: "Photosynthesis is the process by which plants make food using sunlight."</p>
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+  <div id="ar" class="screen info-page" style="display: none;">
+	<p>In simple terms, augmented reality (AR) is technology that overlays digital information, like images or graphics, onto the real world, using a device's camera to blend the two.<br> 
+	 It enhances your view of reality rather than replacing it, allowing you to interact with digital elements in your physical environment.</p> 
+    <button class="back-button" onclick="showScreen('arvr')">Back</button>
+  </div>
+  <div id="vr" class="screen info-page" style="display: none;">
+	<p>Virtual reality (VR) is a computer-generated, three-dimensional environment that users can explore and interact with, creating a sense of being present in a simulated world.<br>
+	It typically uses a VR headset to immerse users, blocking out the real world to display sights and sounds that make the virtual world feel realistic.</p> 
+    <button class="back-button" onclick="showScreen('arvr')">Back</button>
+  </div>
+   <div id="texttospeech" class="screen info-page" style="display: none;">
+	<p>Text-to-speech (TTS) is a type of assistive technology that converts written digital text into spoken audio.<br> 
+	It is also known as "read-aloud" technology or speech synthesis.<br>
+	Powered by artificial intelligence, modern TTS systems produce natural, human-like voices by interpreting the text's linguistic structure and converting it into an audio waveform. </p> 
+    <button class="back-button" onclick="showScreen('mit-app')">Back</button>
+  </div>
+   <div id="speechtotext" class="screen info-page" style="display: none;">
+	<p>Speech-to-Text (STT), also known as Automatic Speech Recognition (ASR), is a technology that converts spoken words into a written transcript.<br>
+	Modern STT systems use artificial intelligence, machine learning, and deep learning to achieve high accuracy in real-time transcription.</p> 
+    <button class="back-button" onclick="showScreen('mit-app')">Back</button>
+  </div>
+  <div id="obsticle-stopping" class="screen info-page" style="display: none;">
+  <img src="assets/images/LFR2.JPG" class="logo" alt="OSC">
+	<p>A car stops for an obstacle because of an automated emergency braking (AEB) system, also called a collision mitigation braking system (CMBS), that uses sensors to detect objects in the vehicle's path.<br>
+	If a collision is imminent and the driver doesn't respond, the system automatically applies the brakes to prevent or mitigate the impact.</p> 
+    <button class="back-button" onclick="showScreen('main-page')">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

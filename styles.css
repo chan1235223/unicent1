@@ -1,0 +1,225 @@
+* {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+	#welcome-screen .IT {
+		color: #FFA500;
+	}
+
+    .screen {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    /* Welcome Screen */
+    #welcome-screen {
+      display: flex;
+      background: linear-gradient(135deg, blue, green);
+      color: white;
+    }
+
+    #welcome-screen img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    #welcome-screen h1 {
+      font-size: 250%;
+      color: red;
+      margin: 0;
+    }
+
+    #welcome-screen button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #welcome-screen button:hover {
+      background-color: #eee;
+    }
+
+    /* How It Works Screen */
+    #how-it-works {
+      display: flex;
+      background: linear-gradient(135deg, blue, green);
+      color: white;
+      position: relative;
+    }
+
+    #how-it-works p {
+      font-size: 400%;
+      max-width: 90vw;
+      margin: auto;
+      line-height: 1.2;
+    }
+
+    /* Main Page */
+    #main-page {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 20px;
+      padding: 40px 20px 80px 20px;
+      background: linear-gradient(to bottom right, red, white);
+      position: relative;
+    }
+
+    #main-page button {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    #main-page button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Back button */
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .back-button:hover {
+      background-color: #ddd;
+    }
+
+    /* Info Pages */
+    .info-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg,orange,yellow);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    .info-page p {
+      font-size: 150%;
+      max-width: 90vw;
+    }
+
+    .info-buttons {
+      display: grid;
+      gap: 20px;
+      width: 90%;
+      height: 70%;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .info-buttons button {
+      font-size: 150%;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+    }
+
+    .info-buttons button:hover {
+      background-color: #eee;
+    }
+    
+    #welcome-screen .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+	  img {
+      margin-left: 20px; /* Adjust the value as needed */
+	} 
+    }	
+	#toll-gate .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+    }
+	#arvr .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+    }
+	#welcome-screen .school{
+		color: #FFFFFF;
+	}
+	#topologies .logo {
+      width: 60%;
+      max-width: none;
+      height: auto;
+	}
+	#networking .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+	}
+	#robot-ai .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+	}
+	#social-media .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+	}
+	#mit-app .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+	}
+	#chess .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+	}
+	#line-following .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+	}
+	#obsticle-stopping .logo {
+      width: 35%;
+      max-width: none;
+      height: auto;
+	}
